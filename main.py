@@ -15,7 +15,7 @@ def home():
 
 @app.route("/post/<int:id_num>")
 def get_post(id_num):
-    return render_template("post.html", all_posts=posts, index=id_num)
+    return render_template("post.html", all_posts=posts, index=id_num, year=current_year)
 
 @app.route("/about")
 def about():
